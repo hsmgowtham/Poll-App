@@ -53,3 +53,7 @@ python manage.py migrate
 ```
 python manage.py shell
 ```
+## Create Django Admin User
+```
+python manage.py createsuperuser
+```
