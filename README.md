@@ -1,7 +1,8 @@
 # Poll-App
-
+A simple poll app that lists available polls, take votes, show results.
 
 # Setup
+### Initial
 - create project
 ```
 django-admin startproject my_poll_site
@@ -10,6 +11,7 @@ django-admin startproject my_poll_site
 ```
 python manage.py startapp polls
 ```
+### DB
 - install Postgre sql adapter
 ```
 pip install psycopg2
@@ -21,14 +23,14 @@ psql
 Create user hsmgowtham with SUPERUSER;
 ALTER USER hsmgowtham WITH PASSWORD 'hsmgowtham';
 ```
-- create table for the polls app
+- create table for the polls app and grant permissions
 ```
 CREATE DATABASE poll_app
     WITH
     OWNER = hsmgowtham;
 GRANT ALL ON DATABASE otoo_db TO hsmgowtham;
 ```
-- Grant Per
+### Installed Apps to DB
 - To create db tables for the installed apps
 ```
 python manage.py migrate
@@ -37,6 +39,7 @@ python manage.py migrate
 ```
 python manage.py makemigrations polls
 ```
+# Extra Command line utilities
 - to check what sql will get executed for models code
 ```
 python manage.py sqlmigrate polls 0001
