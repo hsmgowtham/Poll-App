@@ -60,3 +60,5 @@ python manage.py shell
 ```
 python manage.py createsuperuser
 ```
+## References
+- https://docs.djangoproject.com/en/4.2/intro/tutorial01/
