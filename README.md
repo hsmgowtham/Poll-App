@@ -1,5 +1,5 @@
 # Poll-App
-A simple poll app that lists available polls, take votes, show results.
+A Simple Poll App that lists available polls, take votes, show results.
 
 # Setup
 ### Initial
